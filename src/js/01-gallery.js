@@ -1,3 +1,8 @@
+// Descrito en la documentación
+import SimpleLightbox from "simplelightbox";
+// Importación adicional de estilos
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 // Add imports above this line
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
@@ -27,7 +32,7 @@ listGallery.insertAdjacentHTML("afterbegin", galleryMarkup);
 //   Let the caption be at the bottom and appear 250 milliseconds after image opening.
 listGallery.addEventListener("click", (event) => event.preventDefault());
 
-// let lightbox = new SimpleLightbox('.gallery a', {
-//     captionsData: 'alt',
-//     captionDelay: 250,
-//  });
+let lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+ });
